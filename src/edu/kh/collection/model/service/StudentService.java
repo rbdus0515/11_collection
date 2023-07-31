@@ -191,7 +191,7 @@ public class StudentService {
 		}
 
 		// 일반 for문
-		/*for(int i = 0; i < studentList.size(); i++) {
+		/* for(int i = 0; i < studentList.size(); i++) {
 			System.out.println(studentList.get(i));
 		}
 		*/
