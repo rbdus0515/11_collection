@@ -14,7 +14,8 @@ public class Student {
 	
 	// 매개변수 생성자
 	
-	public Student(String name, int age, String region, char gender, int score) {
+	public Student(String name, int age, 
+			String region, char gender, int score) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -78,7 +79,8 @@ public class Student {
 	// alt + shift + s -> s (Generate toString) -> 엔터
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", age=" + age + ", region=" + region + ", gender=" + gender + ", score="
+		return "Student [name=" + name + ", age=" + age + ", region=" 
+	+ region + ", gender=" + gender + ", score="
 				+ score + "]";
 	}
 

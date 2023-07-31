@@ -1,5 +1,6 @@
 package edu.kh.collection.model.service;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.List;
@@ -63,7 +64,7 @@ public class StudentService {
 			// 반환형이 Object == 모든 객체를 반환할 수 있다.
 			
 			
-			if(studentList.get(0) instanceof Student) {
+			if(studentList.get(0) instanceof Student) { // instanceof = 상속관계에서 부모객체인지 자식객체인지 확인
 				System.out.println( ( (Student)studentList.get(0) ) .getName() );
 			}
 			// 제네릭스 (Generics)

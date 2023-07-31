@@ -7,9 +7,22 @@ public class StudentRun {
 		
 		StudentService service = new StudentService();
 		
-		service.displayMenu();
+		//service.ex();
+		//service.displayMenu();
 		
 	}
 
+	
+	class Solution {
+	    public int solution(int num, int n) {
+	        
+	        
+	        if(num % n == 0) {
+	        	return 1;
+	        } else {
+	        	return 0;
+	        }
+	    }
+	}
 }
 
