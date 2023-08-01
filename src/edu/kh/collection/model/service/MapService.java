@@ -107,6 +107,23 @@ public class MapService {
 		
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		
+		for(int i = 0; i < 10; i++) {
+			// Map 생성
+			Map<String, Object> map = new HashMap<String, Object>();
+			
+			// Map에 데이터 추가
+			map.put("id", "user0", + i);
+			
+			// Map을 List에 추가
+			list.add(map);
+					
+		}
+		
+		// for문 종료시 List에 10개의 Map객체가 추가 되어 있다.
+		
+		for( Map<String, Object> temp : list ) {
+			System.out.println(temp.get("id"));
+		}
 		
 		
 	}
