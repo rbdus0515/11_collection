@@ -112,7 +112,7 @@ public class MapService {
 			Map<String, Object> map = new HashMap<String, Object>();
 			
 			// Map에 데이터 추가
-			map.put("id", "user0", + i);
+			map.put("id", "user0" + i);
 			
 			// Map을 List에 추가
 			list.add(map);
