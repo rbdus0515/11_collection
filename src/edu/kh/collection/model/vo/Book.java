@@ -6,21 +6,26 @@ public class Book {
 	private String name; // 작가
 	private int price; // 가격
 	private String cps; // 출판사
+	private int bookNum; // 책번호
 	
 	public Book() {}
 
-	public Book(String title, String name, int price, String cps) {
+	public Book(String title, String name, int price, String cps, int bookNum) {
 		super();
 		this.title = title;
 		this.name = name;
 		this.price = price;
 		this.cps = cps;
+		this.bookNum = bookNum;
 	}
 
+	public int getBookNum() {
+		return bookNum;
+	}
 
-
-
-
+	public void setBookNum(int bookNum) {
+		this.bookNum = bookNum;
+	}
 
 	public String getTitle() {
 		return title;
@@ -56,7 +61,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book [도서명= " + title + ", 작가명= " + name + 
+		return bookNum + "번 도서 : Book [도서명= " + title + ", 작가명= " + name + 
 				", 가격= " + price + "원" + ", 출판사= " + cps + "]";
 	}
 
